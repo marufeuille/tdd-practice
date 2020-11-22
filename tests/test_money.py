@@ -1,13 +1,8 @@
 import pytest
 
-from pathlib import Path
-import sys
+from dollar import Dollar
 
-sys.path.append(str(Path(__file__).parent.parent / "src"))
-from init import init
-
-def test_multiplication(init):
-    from dollar import Dollar
+def test_multiplication():
     five = Dollar(5)
     five.times(2)
     assert 10 == five.amount
