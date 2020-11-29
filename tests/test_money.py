@@ -10,3 +10,8 @@ def test_multiplication():
 def test_equality():
     assert Dollar(5) == Dollar(5)
     assert Dollar(5) != Dollar(7)
+
+def test_franc_multiplication():
+    five = Franc(5)
+    assert Franc(10) == five.times(2)
+    assert Franc(15) == five.times(3)
