@@ -2,9 +2,10 @@ import pytest
 
 from dollar import Dollar
 from franc import Franc
+from money import Money
 
 def test_multiplication():
-    five = Dollar(5)
+    five = Money.dollar(5)
     assert Dollar(10) == five.times(2)
     assert Dollar(15) == five.times(3)
 
