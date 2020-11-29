@@ -5,7 +5,10 @@ class Money:
 
     def __eq__(self: 'Money', others:'Money') -> bool:
         return self._amount == others._amount \
-            and type(self) == type(others)
+            and self._currency == others._currency
+
+    def times(self, multiplier: int) -> 'Money':
+        return Money(self._amount * multiplier, self._currency)
 
     @classmethod
     def dollar(cls: 'Money', amount: int) -> 'Money':
