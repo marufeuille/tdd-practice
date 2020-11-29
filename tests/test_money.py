@@ -1,6 +1,7 @@
 import pytest
 
 from dollar import Dollar
+from franc import Franc
 
 def test_multiplication():
     five = Dollar(5)
