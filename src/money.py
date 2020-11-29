@@ -1,7 +1,7 @@
 class Money:
-    def __init__(self, amount):
-        self._amount = amount
+    def __init__(self: 'Money', amount: int):
+        self._amount: int = amount
 
-    def __eq__(self, others):
+    def __eq__(self: 'Money', others:'Money') -> bool:
         return self._amount == others._amount \
             and type(self) == type(others)
