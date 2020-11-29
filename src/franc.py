@@ -3,5 +3,5 @@ class Franc(Money):
     def __init__(self: 'Franc', amount: int):
         super().__init__(amount)
 
-    def times(self: 'Franc', multiplier: int) -> 'Franc':
+    def times(self: 'Franc', multiplier: int) -> 'Money':
         return Franc(self._amount * multiplier)
