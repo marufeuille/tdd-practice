@@ -10,3 +10,7 @@ class Money:
     @classmethod
     def dollar(cls: 'Money', amount: int) -> 'Money':
         return Money(amount, "USD")
+
+    @classmethod
+    def franc(cls: 'Money', amount: int) -> 'Money':
+        return Money(amount, "CHF")
