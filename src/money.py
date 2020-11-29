@@ -5,3 +5,7 @@ class Money:
     def __eq__(self: 'Money', others:'Money') -> bool:
         return self._amount == others._amount \
             and type(self) == type(others)
+
+    @classmethod
+    def dollar(cls: 'Money', amount: int) -> 'Money':
+        return Money(amount)
